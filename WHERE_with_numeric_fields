@@ -1,0 +1,7 @@
+/*
+Programmer: Akinwale Owi
+Program Purpose: WHERE with a numeric field */
+
+SELECT * 
+FROM Orders
+WHERE amount=400
