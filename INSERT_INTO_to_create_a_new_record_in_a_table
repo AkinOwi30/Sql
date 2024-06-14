@@ -1,0 +1,7 @@
+/*
+Programmer: Akinwale Owi
+Program Goal: add a new record in a table in SQL with the help of INSERT INTO
+*/
+
+
+INSERT INTO Orders(order_id, item, amount, customer_id)VALUES ('2024', '500.99' ,'The Grocery Store by GGs', '5');
