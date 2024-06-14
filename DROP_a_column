@@ -1,6 +1,5 @@
-  /*  
-Programmer: Akinwale Owi 
-Program Purpose:Drop a column,ex age from customers
-*/ 
-ALTER TABLE Customers  
-DROP COLUMN age;
+ /* 
+  Programmer: Akinwale Owi 
+  Program Purpose:Drop a column,ex age from customers */ 
+  ALTER TABLE Customers  
+  DROP COLUMN country;
