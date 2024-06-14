@@ -1,0 +1,9 @@
+/*
+Programmer: Akinwale Owi
+Program Goal: Use the 'AS' keyword to give a column a temporary name/alias 
+*/
+
+--aliases are not permanent they only last for the duration of the query
+
+SELECT item AS product
+FROM Orders;
