@@ -1,0 +1,5 @@
+/*
+Programmer: Akinwale Owi
+ Program Purpose: Multi line comments*/
+SELECT first_name
+FROM Customers;
