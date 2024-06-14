@@ -1,0 +1,5 @@
+/*
+Programmer: Akinwale Owi 
+Program Purpose: delete row by two conditions using AND*/ 
+
+DELETE FROM Customers WHERE first_name = 'Betty' AND last_name = 'Doe';
