@@ -1,0 +1,6 @@
+/*Coding Creature: Akinwale Owi
+Program Purpose: With the BETWEEN command return all the records between two numbers to SELECT the range of data
+*/
+
+SELECT * FROM Orders
+WHERE amount BETWEEN 250 AND 500;
