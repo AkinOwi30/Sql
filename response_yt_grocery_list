@@ -4,3 +4,21 @@ https://www.programiz.com/sql/online-compiler/
 So the plan is to make all the new rows from the previous one, 
 then drop all the columns except num and name, 
 then drop all the rows that aren’t the ones we made
+
+How to delete a row: https://github.com/AkinOwi30/Sql/blob/main/DELETE_FROM_to_delete_a_record_from_a_table
+here's an example:
+
+DELETE FROM Orders
+WHERE order_id ='3';
+
+-so we delete all but our desired row that has four things we wwant a list of-
+--now we insert the values from the list since I don't know how to just softcode pull them in if that's even possible in sql:
+INSERT INTO Orders(order_id, item, amount, customer_id)
+VALUES ('2', 'Sour Gummy Worms' ,'delete', '5');
+
+--
+INSERT INTO Orders(order_id, item, amount, customer_id)VALUES ('3', 'toothpaste' ,'4', '5');
+
+INSERT INTO Orders(order_id, item, amount, customer_id)VALUES ('4', 'cereal' ,'4', '5');
+-----------------
+now time to delete the extra columns and we should be done
