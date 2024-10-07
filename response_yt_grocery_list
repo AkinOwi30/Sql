@@ -1,18 +1,29 @@
-*pay close attention to your successful copy and paste patterns because the compiler is below is picky on formatting.
+Question:
+How to change a line with 4 items, into a grocery list (ie num, item)?
+
+ 
+
+Free online editor I used for this example; it has the Orders table so it might save you some time using it directly:
 https://www.programiz.com/sql/online-compiler/
 
-So the plan is to make all the new rows from the previous one, 
-then drop all the columns except num and name, 
-then drop all the rows that aren’t the ones we made
+*Pay close attention to your successful copy and paste patterns because the compiler is below is picky on formatting.
 
+The plan:
+1.	Drop all the rows/lines we won’t be using.
+
+1a.
 How to delete a row: https://github.com/AkinOwi30/Sql/blob/main/DELETE_FROM_to_delete_a_record_from_a_table
-here's an example:
 
+1aa. Example command:
 DELETE FROM Orders
 WHERE order_id ='3';
 
--so we delete all but our desired row that has four things we wwant a list of-
---now we insert the values from the list since I don't know how to just softcode pull them in if that's even possible in sql:
+
+2.  Now we insert the values from the list since I don't know how to just softcode pull them in if that's even possible in sql:
+
+**2b. It may save time to delete the extra columns before adding the data to not have to put placeholder data in soon to be deleted columns.
+
+2a. Example insert scripts:
 INSERT INTO Orders(order_id, item, amount, customer_id)
 VALUES ('2', 'Sour Gummy Worms' ,'delete', '5');
 
@@ -20,5 +31,6 @@ VALUES ('2', 'Sour Gummy Worms' ,'delete', '5');
 INSERT INTO Orders(order_id, item, amount, customer_id)VALUES ('3', 'toothpaste' ,'4', '5');
 
 INSERT INTO Orders(order_id, item, amount, customer_id)VALUES ('4', 'cereal' ,'4', '5');
------------------
-now time to delete the extra columns and we should be done
+
+3.	Now just delete the extra columns and we’re done
+
